@@ -1,0 +1,16 @@
+<view class="container">
+  <view class="header">
+    <y-epsoide index="{{classic.index}}" />
+    <y-like bind:like="onLike" like="{{likeStatus}}" count="{{likeCount}}" />
+  </view>
+  <!-- movie -->
+  <y-movie hidden="{{classic.type!=100}}" img="{{classic.image}}" content="{{classic.content}}" />
+  <!-- music -->
+  <!-- hidden不触发组件生命周期detached，wx:if触发detached -->
+  <!-- <y-music hidden="{{classic.type!=200}}" img="{{classic.image}}" content="{{classic.content}}" src="{{classic.url}}" title="{{classic.title}}" /> -->
+  <y-music wx:if="{{classic.type==200}}" img="{{classic.image}}" content="{{classic.content}}" src="{{classic.url}}" title="{{classic.title}}" />
+  <!-- essay -->
+  <y-essay hidden="{{classic.type!=300}}" img="{{classic.image}}" content="{{classic.content}}" />
+  <!-- 底部切换 -->
+  <y-navi class="navi" bind:left="onNext" bind:right="onPrevious" title="{{classic.title}}" first="{{first}}" latest="{{latest}}" />
+</view>

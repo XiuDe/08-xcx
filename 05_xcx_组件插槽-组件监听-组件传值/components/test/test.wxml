@@ -1,0 +1,14 @@
+<!--components/test/test.wxml-->
+<view class="testComBox">
+  <text class="red-color">custom组件</text>
+  <view>组价中的data值为：{{name}}</view>
+  <button bindtap="btnHandler" type="primary">组件方法</button>
+  <view>--------以下为外界传来的值--------</view>
+  <view>外界传来properties的propCount的值为：{{propCount}}</view>
+  <button type="primary" bindtap="comBtnHandler">组件中修改properties的值：{{propCount}}</button>
+  <view>组件按钮修改properties的值：{{propCount}}</view>
+</view>
+<slot />
+<view>此标签以上插槽无name名，以下有插槽name名</view>
+<slot name="before" />
+<slot name="after" />

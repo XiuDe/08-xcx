@@ -1,0 +1,32 @@
+<view class="wrap">
+
+  <view bindtap="showModal">
+    <text>{{year}}-{{month<10?'0'+month:month}}-{{day<10?'0'+month:month}}</text>
+    <icon class="arrow"></icon>
+  </view>
+
+  <view class="modal modal-bottom-dialog" hidden="{{hideFlag}}">
+    <view class="modal-cancel" bindtap="hideModal"></view>
+    <view class="bottom-dialog-body bottom-positon" animation="{{animationData}}">
+      <view class="pick-time-tit">
+        <view class="tit-cancel" bindtap='mCancel'>取消</view>
+        <view class="tit-confirm" bindtap="mConfirm" >确认</view>
+      </view>
+
+      <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;"  bindchange='bindChange' value="{{value}}">
+        <picker-view-column>
+          <view wx:for="{{years}}" style="line-height: 50px" date-Year="{{item}}" wx:key="index">{{item}}年</view>
+        </picker-view-column>
+        <picker-view-column  bindtap='getOption'>
+          <view wx:for="{{months}}" style="line-height: 50px" date-Month="{{item}}" wx:key="index">{{item}}月</view>
+        </picker-view-column>
+        <picker-view-column  bindtap='getOption'>
+          <view wx:for="{{days}}" style="line-height: 50px" date-Month="{{item}}" wx:key="index">{{item}}日</view>
+        </picker-view-column>
+      </picker-view>
+
+    </view>
+
+  </view>
+
+</view>

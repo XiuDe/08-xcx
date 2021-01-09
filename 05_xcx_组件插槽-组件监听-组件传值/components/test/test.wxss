@@ -1,0 +1,7 @@
+/* components/test/test.wxss */
+.red-color{
+  color: red;
+}
+.testComBox{
+  background-color: #abcdef;
+}

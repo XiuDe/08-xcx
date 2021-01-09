@@ -1,0 +1,5 @@
+.box{
+  background-color: #ff1e1e;
+  margin: 5rpx;
+  height: 150rpx;
+}

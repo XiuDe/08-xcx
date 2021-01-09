@@ -1,0 +1,122 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": true,
+    "useApiHook": true,
+    "useApiHostProcess": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "bundle": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.10.3",
+  "appid": "wxb15a59f95ec0c198",
+  "projectname": "bottom_top",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": -1,
+          "name": "右划删除",
+          "pathName": "pages/index1/index1",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "顶部标签切换",
+          "pathName": "pages/diyTab/diyTab",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 2,
+          "name": "pages/index1/index1_底部弹出",
+          "pathName": "pages/index1/index1",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "自定义pick-time",
+          "pathName": "pages/time-pick/time-pick",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 4,
+          "name": "分享到朋友圈，存在BUG",
+          "pathName": "pages/share_pyq/share_pyq",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "左滑删除效果",
+          "pathName": "pages/movable-view/movable-view",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 6,
+          "name": "底部弹出_ cart-bottom_top",
+          "pathName": "pages/cart-bottom_top/cart-bottom_top",
+          "query": "user='U88312'",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "生成海报",
+          "pathName": "pages/canvas-img/canvas-img",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

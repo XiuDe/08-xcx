@@ -1,0 +1,8 @@
+<!--pages/info/info.wxml-->
+<text>pages/info/info.wxml</text>
+<navigator url="/pages/index/index" open-type="switchTab">导航到index页面</navigator>
+<navigator open-type="navigateBack" delta="1">返回上一页</navigator>
+<!-- 编程式导航 -->
+<button type="warn" bindtap="btnHanlder2">通过编程式导航跳转到logs页面</button>
+<!-- 编程式导航回退 -->
+<button type="primary" bindtap="btnHanlder3">编程式导航后退</button>

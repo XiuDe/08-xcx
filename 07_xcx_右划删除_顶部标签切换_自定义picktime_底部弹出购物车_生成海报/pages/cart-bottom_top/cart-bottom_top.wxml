@@ -1,0 +1,49 @@
+<view class="wrap">
+
+  <view bindtap="showModal">
+    <text>规格</text>
+    <icon class="arrow"></icon>
+  </view>
+
+  <view class="modal modal-bottom-dialog" hidden="{{hideFlag}}">
+    <view class="modal-cancel" bindtap="hideModal"></view>
+
+    <view class="bottom-dialog-body bottom-positon" animation="{{animationData}}">
+      <view class="bot-top-container">
+        <view class="x-botton">
+          <image src="/images/x-but.png"></image>
+        </view>
+        <view class="bot-top-header">
+          <view class="header-left">
+            <image src=""></image>
+          </view>
+          <view class="header-right">
+            <view>已选25g*5片/盒/件</view>
+            <view>¥754.90</view>
+          </view>
+        </view>
+
+        <scroll-view class="scroll-view-h" scroll-y>
+          <view class="bot-top-body">
+           <block wx:for="{{goods_map_spec}}" wx:key="index" wx:for-index="id">
+             <view class="body-tit">{{item.goods_spec_name}}</view>
+               <view class="body-tags">
+                 <block wx:for="{{item.goods_spec_value}}" wx:key="indexs">
+                 <view class="tages-item {{item.default==1?true:''}}" catchtap="clickMenu" data-select-index="{{id}}" data-attr-index="{{index}}" data-content="{{goods_map_spec}}">{{item.specs_value_name}}</view>
+                 </block>
+               </view>
+             
+           </block>
+        </view>
+        </scroll-view>
+        
+        <view class="bot-top-bottom">确定</view>
+      </view>
+
+    </view>
+  </view>
+
+</view>
+
+<view>-----------分享测试-------------</view>
+<button open-type="share" role="button" aria-disabled="false">分享</button>

@@ -1,0 +1,10 @@
+<view class="container">
+  <image src="{{book.img}}" />
+  <view class="description">
+    <text class="title">{{book.title}}</text>
+    <text class="author">{{book.sub1}}</text>
+    <view class="foot">
+      <text class="footer">{{book.reading}}</text>
+    </view>
+  </view>
+</view>

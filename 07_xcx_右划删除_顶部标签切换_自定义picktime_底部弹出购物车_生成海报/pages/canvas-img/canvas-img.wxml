@@ -1,0 +1,16 @@
+<view style='position: relative;'>
+  <view class="top">
+    <button bind:tap='onRevert'>撤销</button>
+    <button bind:tap='onRecover'>恢复</button>
+    <button bind:tap='showImage'>展示</button>
+    <button bind:tap='SecondSaveImage'>保存</button>
+  </view>
+  
+  <!--  customActionStyle="{{customActionStyle}}"  bind:touchEnd="touchEnd"   palette="{{paintPallette}}" action="{{action}}"  -->
+
+  <painter customStyle='margin-left: 40rpx; height: 1200rpx;' dancePalette="{{template1}}" bind:imgOK="onImgOK1" />  
+  <painter palette="{{paintPallette2}}" bind:imgOK="onImgOK2" />
+    
+  <!-- <image src="{{image}}" style="width: 654rpx; height: 1000rpx; margin-left:40rpx;"/>  action="{{action}}" -->
+  
+</view>

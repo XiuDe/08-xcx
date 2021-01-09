@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "y-like":"/components/like/index",
+    "y-movie":"/components/classic/movie/index",
+    "y-music": "/components/classic/music/index",
+    "y-essay": "/components/classic/essay/index",
+    "y-epsoide":"/components/epsoide/index",
+    "y-navi":"/components/navi/index"
+  }
+}

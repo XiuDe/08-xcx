@@ -1,0 +1,39 @@
+<!--pages/home/home.wxml-->
+<view>{{ message }}</view>
+<view id="item-{{id}}">{{info}}</view>
+<view>{{ flag? '要挑就要调好的':'要挑商城'}}</view>
+<view bindtap="tapName">Click me!</view>
+
+<input bindinput="inputName" class="input1"></input>
+<input bindinput="ipHandle"></input>
+
+<input class="weui-input"  maxlength="10" bindinput="bindKeyInput" value="{{msg}}"/>
+
+<view>同步数据：{{msg}}</view>
+
+<button type="primary" bindtap="btnHandle" data-info="123">按钮</button>
+
+<!--wxs内嵌脚本模块，并将此模块暴露出来供页面使用-->
+<wxs module = "foo">
+var some_msg = 'Hello Yaotiao';
+module.exports = {
+	msg : some_msg,
+}
+</wxs>
+<view>{{foo.msg}}</view>
+<!--wxs外联模块，引入-->
+<wxs src="./../tools.wxs" module="tools"></wxs>
+<view>{{tools.msg}}</view>
+<view>{{tools.bar(tools.FOO)}}</view>
+
+<!-- 导航到非tabBar页面 -->
+<navigator url="/pages/info/info?name=zs&age=20">导航到info页面</navigator>
+<!-- 导航到tabBar页面 -->
+<navigator url="/pages/main/main">导航到main页面</navigator>
+<!-- 编程式传参 -->
+<button type="primary" bindtap="btnTapNavigator">以下为组件传参</button>
+<!-- 导航式传参 -->
+<navigator url="/pages/info/info?name=zs&age=20">navigator传参跳转到info页面</navigator>
+
+<!-- POST请求 -->
+<button type="primary" bindtap="btnPost">Post请求</button>

@@ -1,0 +1,6 @@
+<button type="primary" bindtap="btnHandler">修改count的默认值{{count}}</button>
+<custom-test prop-count="{{count}}" class="customTest" bind:myevent="getSonCount">
+  <view>这是通过组件插槽渲染的标签1</view>
+  <view slot="before">这是多插槽before</view>
+  <view slot="after">这是多插槽after</view>
+</custom-test>

@@ -1,0 +1,20 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index1/index1",
+    "pages/diyTab/diyTab",
+    "pages/time-pick/time-pick",
+    "pages/share_pyq/share_pyq",
+    "pages/movable-view/movable-view",
+    "pages/cart-bottom_top/cart-bottom_top",
+    "pages/canvas-img/canvas-img"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

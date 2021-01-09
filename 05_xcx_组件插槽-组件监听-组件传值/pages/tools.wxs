@@ -1,0 +1,10 @@
+// /pages/tools.wxs
+var foo = "'Hello Yaotiao' from tools.wxs";
+var bar = function(d){
+  return d;
+}
+module.exports = {
+  FOO:foo,
+  bar:bar,
+}
+module.exports.msg = "要挑就要挑好的";

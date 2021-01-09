@@ -1,0 +1,42 @@
+<!--pages/main/main.wxml-->
+<text>页面渲染</text>
+<view wx:if="{{length>5}}">1</view>
+<view wx:elif="{{length>2}}">2</view>
+<view wx:else>3</view>
+
+<button type="primary">按钮</button>
+<block wx:if="{{length>5}}">
+     <view>要挑商城</view>
+     <view>三享读书</view>
+     <view>聚米创客</view>
+</block>
+<view wx:elif="{{length>2}}">山东啄木鸟信息技术有限公司</view>
+
+
+<button type="primary" bindtap="btntap">条件渲染</button>
+<view hidden="{{temp}}">Give me five!</view>
+<!-- wx:for -->
+<view wx:for="{{list}}" wx:key="index">
+    三元控股旗下：{{index}}、{{item}}
+</view>
+<!-- wx:for结合block -->
+<block wx:for="{{list}}" wx:key="index">
+  <text> {{index}}、</text>
+  <text> {{item}} </text>
+</block>
+
+<!-- wx:for结合key + 文本输入 -->
+<view>
+  <input value="{{name}}" bindinput="iptHandler"></input>
+  <button type="primary" bindtap="add">添加</button>
+</view>
+<view wx:for="{{list2}}" wx:key="id">
+  <checkbox></checkbox>
+  {{item.id}}、{{item.name}}
+</view>
+
+<button type="primary" bindtap="btn2Handler">通过按钮触发下拉刷新</button>
+<view>以下是转发分享按钮</view>
+<button type="primary" open-type='share' data-info="自定义属性的值">转发</button>
+<!-- 模拟下拉加载数据 -->
+<view wx:for="{{msglist}}" wx:key="*this" class="box">{{item}}、商品展示</view>

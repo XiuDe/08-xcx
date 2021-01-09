@@ -1,0 +1,19 @@
+.container{
+  display: inline-flex;
+  flex-direction: row;
+  padding: 12rpx; /* 针对定位，显示不全的情况*/
+  width: 90rpx;
+}
+.container image{
+  width: 32rpx;
+  height: 28rpx;
+}
+.container text{
+  /* font-family: "PingFangSC-Thin"; */
+  font-size: 30rpx;
+  color: #bbb;
+  position: relative;
+  bottom: 16rpx;
+  left: 6rpx;
+  line-height: 28rpx; /*消除红心右上文字的间距*/
+}
