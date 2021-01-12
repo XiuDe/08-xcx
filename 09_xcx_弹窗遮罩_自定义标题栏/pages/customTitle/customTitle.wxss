@@ -1,0 +1,19 @@
+/* 自定义标题栏start */
+.jn_same_height {
+  position: fixed;
+  width: 750rpx;
+}
+
+.jn_same_height view {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 144rpx;
+  height: 50rpx;
+  font-size: 36rpx;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  line-height: 50rpx;
+}
+/* 自定义标题栏end */

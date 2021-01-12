@@ -35,30 +35,30 @@
   "compileType": "miniprogram",
   "libVersion": "2.14.3",
   "appid": "wxd0cb7df61db801f7",
-  "projectname": "xcx_%E5%BC%B9%E7%AA%97%E9%81%AE%E7%BD%A9",
+  "projectname": "xcx_%E5%BC%B9%E7%AA%97%E9%81%AE%E7%BD%A9_%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%87%E9%A2%98%E6%A0%8F",
   "debugOptions": {
     "hidedInDevtools": []
   },
   "scripts": {},
   "isGameTourist": false,
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
+    "plugin": {
       "list": []
     },
     "game": {
-      "list": []
-    },
-    "plugin": {
       "list": []
     },
     "gamePlugin": {
       "list": []
     },
     "miniprogram": {
-      "list": []
+      "list": [
+        {
+          "name": "自定义标题栏",
+          "pathName": "pages/customTitle/customTitle",
+          "scene": null
+        }
+      ]
     }
   }
 }

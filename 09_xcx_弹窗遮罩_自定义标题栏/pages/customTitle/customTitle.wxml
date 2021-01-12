@@ -1,0 +1,6 @@
+<!-- 自定义标题栏start -->
+<view class="jn_same_height" style="position:fixed;top:0;z-index:49;left:0;widht:750rpx;height:{{jnPosition.height+jnPosition.top+4}}px;text-align:center;background: linear-gradient(270deg, #EE0407, #FD1B49 100%);">
+  <image catchtap="backpage" style="width: 22rpx;height: 38rpx;position: fixed;top: {{jnPosition.top+6}}px;left: 15px;z-index:500;" src="/images/other-profit-icon-back.png"></image>
+  <view style="padding-top:{{jnPosition.top+4}}px;">其他收益</view>
+</view>
+<!-- 自定义标题栏end -->
