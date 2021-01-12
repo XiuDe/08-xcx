@@ -1,0 +1,24 @@
+<button bindtap="showview">Show</button>
+
+<view class="cover-container">
+  <view class="bg" catchtap='hideview' wx:if='{{coverdisplay}}'></view>
+  <view class="show" catchtap='hideview' wx:if='{{coverdisplay}}'>
+      <view class="cover-title">结算说明</view>
+      <view class="lj-sy-box">
+         <view class="cover-same-tit">累计收益:</view>
+         <view class="cover-same-red-txt">指符合结算规则的可提现余额</view>
+      </view>
+
+      <view class="lj-sy-box">
+         <view class="cover-same-tit">预估收益:</view>
+         <view class="cover-same-red-txt">指预估可获得的收益金额，在符合结算规则后，变为累计收益可进行提现</view>
+      </view>
+
+      <view class="lj-sy-box">
+         <view class="cover-same-tit">结算规则:</view>
+         <view class="cover-same-red-txt">每月10日后结算上月确认收货并已审核符合结算规则的订单收入</view>
+      </view>
+      
+      <view class="cover-btn">我知道了</view>
+  </view>
+</view>

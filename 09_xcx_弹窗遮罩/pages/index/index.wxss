@@ -1,0 +1,67 @@
+.cover-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bg {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100vh;
+  height: 100vh;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.7;
+  opacity: 0.70;
+  filter: alpha(opacity=70);
+}
+
+.show {
+  margin-top: 270rpx;
+  padding-bottom: 32rpx;
+  width: 620rpx;
+  background-color: white;
+  z-index: 1002;
+  border-radius: 12rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 26rpx;
+  font-weight: 400;
+  line-height: 40rpx;
+  align-items: center;
+}
+
+.cover-title {
+  height: 130rpx;
+  width: 100%;
+  line-height: 130rpx;
+  font-size: 36rpx;
+  font-weight: 600;
+  text-align: center;
+  color: #333333;
+}
+
+.lj-sy-box {
+  width: 552rpx;
+  padding: 20rpx 35rpx 0;
+}
+
+.cover-same-tit {
+  color: #666666;
+}
+
+.cover-same-red-txt {
+  color: #ff1e1e;
+}
+
+.cover-btn {
+  margin-top: 42rpx;
+  width: 250rpx;
+  height: 80rpx;
+  background: #ff1e1e;
+  border-radius: 40rpx;
+  color: #fff;
+  line-height: 80rpx;
+  text-align: center;
+}
