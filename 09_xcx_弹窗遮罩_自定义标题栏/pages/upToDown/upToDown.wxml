@@ -1,0 +1,173 @@
+<!-- 自定义标题栏start -->
+<view class="jn_same_height" style="position:fixed;top:0;z-index:1000;left:0;widht:750rpx;height:{{jnPosition.height+jnPosition.top+4}}px;text-align:center;background: #ffffff">
+  <image catchtap="backpage" style="width: 22rpx;height: 38rpx;position: fixed;top: {{jnPosition.top+6}}px;left: 15px;z-index:1000;" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAhCAMAAADj/gtmAAAAY1BMVEVHcEwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADIAbxiAAAAIHRSTlMAoZucpKKjAgMBnaWaoJmen5im8JWN8/IGfI+O9XaJ6p97IFQAAACESURBVCjPjdDLDoNACIVhZnQctVZrrZfeef+nLE1clAOLsvxCAvmJ1OT7dAUZmCcjfFPSipwyylFJ4Ur4lSb+KUlJ95UapVLSu1IqGVFoNkIr87LpRBe7lQPeE0v4+W5BW52wlFiFhXcbwEqx1rGisRbBDmKdY71jI9hZ7EXG3gQWH88PcEkQBo4LQM4AAAAASUVORK5CYII="></image>
+  <view catchtap="showsplice" style="padding-top:{{jnPosition.top+4}}px;">淘宝<image class="bot-arr-icon" src="/images/tit-bot-arr.png"></image></view>
+</view>
+<!-- 自定义标题栏end -->
+<!-- 我的订单-团队订单切换 -->
+<view class="order_change_tag_container" style="padding-top:{{jnPosition.height+jnPosition.top+20}}px">
+   <view class="order_change_tag_box">
+       <view class="{{myorder?'current':''}}" data-my="1" catchtap="changeOrder">我的订单</view>
+       <view class="{{myorder?'':'current'}}" data-my="2" catchtap="changeOrder">团队订单</view>
+   </view>
+</view>
+<!-- 全部 已付款 已结算 已失效 tag切换 -->
+<view class="nav-container">
+	<view class="nav-item {{s==''?'on':''}}" data-state="" bindtap="changeNav">
+		<text>全部</text>
+		<view class="nav-bottom" wx:if="{{s==''}}"></view>
+	</view>
+	<view class="nav-item {{s=='1'?'on':''}}" data-state="1" bindtap="changeNav">
+		<text>已付款</text>
+		<view class="nav-bottom" wx:if="{{s=='1'}}"></view>
+	</view>
+	<view class="nav-item {{s=='2'?'on':''}}" data-state="2" bindtap="changeNav">
+		<text>已结算</text>
+		<view class="nav-bottom" wx:if="{{s=='2'}}"></view>
+	</view>
+	<view class="nav-item {{s=='3'?'on':''}}" data-state="3" bindtap="changeNav">
+		<text>已失效</text>
+		<view class="nav-bottom" wx:if="{{s=='3'}}"></view>
+	</view>
+</view>
+<view class="bbctouch-order-item-white"></view>
+<!-- 列表展示 -->
+<view class="list_container">
+   <!-- header -->
+   <view class="list_head">
+      <view class="header_left">
+        <image src="/images/tb-circle-icon.png"></image>
+        <view>订单号：7678883822393</view>
+      </view>
+      <view class="header_right">
+        <view class="hadpay">已付款</view>
+      </view>
+   </view>
+   <!-- body -->
+   <view class="list_body">
+     <view class="body_left_img">
+       <image src=""></image>
+     </view>
+     <view class="body_right_txt">
+      <view class="goodsName">香奈儿 香奈儿香奈儿香奈儿(Chanel)口红可可小可香奈儿</view>
+      <view class="item_sy">
+        <view class="item_sy_box">
+          <view>¥13.02</view>
+          <view>付款金额</view>
+        </view>
+        <view class="l"></view>
+        <view class="item_sy_box">
+          <view>¥13.02</view>
+          <view>预估收入</view>
+        </view>
+        <view class="l"></view>
+        <view class="item_sy_box">
+          <view>¥13.02</view>
+          <view>收入来源</view>
+        </view>
+      </view>
+      <!-- txt提示 -->
+      <view class="tsh">*本月结算订单收益次月可提现</view>
+     </view>
+   </view>
+   <!-- create time -->
+   <view class="create-time">创建时间：2020-12-03 13:39:02</view>
+</view>
+<!-- 列表展示 -->
+<view class="list_container">
+   <!-- header -->
+   <view class="list_head">
+      <view class="header_left">
+        <image src="/images/tb-circle-icon.png"></image>
+        <view>订单号：7678883822393</view>
+      </view>
+      <view class="header_right">
+        <view class="hadpay">已付款</view>
+      </view>
+   </view>
+   <!-- body -->
+   <view class="list_body">
+     <view class="body_left_img">
+       <image src=""></image>
+     </view>
+     <view class="body_right_txt">
+      <view class="goodsName">香奈儿 香奈儿香奈儿香奈儿(Chanel)口红可可小可香奈儿</view>
+      <view class="item_sy">
+        <view class="item_sy_box">
+          <view>¥13.02</view>
+          <view>付款金额</view>
+        </view>
+        <view class="l"></view>
+        <view class="item_sy_box">
+          <view>¥13.02</view>
+          <view>预估收入</view>
+        </view>
+        <view class="l"></view>
+        <view class="item_sy_box">
+          <view>¥13.02</view>
+          <view>收入来源</view>
+        </view>
+      </view>
+      <!-- txt提示 -->
+      <view class="tsh">*本月结算订单收益次月可提现</view>
+     </view>
+     
+   </view>
+   <!-- create time -->
+   <view class="create-time">创建时间：2020-12-03 13:39:02</view>
+</view>
+<!-- 列表展示 -->
+<view class="list_container">
+   <!-- header -->
+   <view class="list_head">
+      <view class="header_left">
+        <image src="/images/tb-circle-icon.png"></image>
+        <view>订单号：7678883822393</view>
+      </view>
+      <view class="header_right">
+        <view class="hadpay">已付款</view>
+      </view>
+   </view>
+   <!-- body -->
+   <view class="list_body">
+     <view class="body_left_img">
+       <image src=""></image>
+     </view>
+     <view class="body_right_txt">
+      <view class="goodsName">香奈儿 香奈儿香奈儿香奈儿(Chanel)口红可可小可香奈儿</view>
+      <view class="item_sy">
+        <view class="item_sy_box">
+          <view>¥13.02</view>
+          <view>付款金额</view>
+        </view>
+        <view class="l"></view>
+        <view class="item_sy_box">
+          <view>¥13.02</view>
+          <view>预估收入</view>
+        </view>
+        <view class="l"></view>
+        <view class="item_sy_box">
+          <view>¥13.02</view>
+          <view>收入来源</view>
+        </view>
+      </view>
+      <!-- txt提示 -->
+      <view class="tsh">*本月结算订单收益次月可提现</view>
+     </view>
+     
+   </view>
+   <!-- create time -->
+   <view class="create-time">创建时间：2020-12-03 13:39:02</view>
+</view>
+
+<!-- 标题栏弹窗start -->
+<view class="splice-cover" wx:if="{{showSplice}}" catchtouchmove="stopMove" catchtap="hideSplice" style="top:{{jnPosition.bottom}}px;">
+	<view class="splice-view"  animation="{{animationData_g}}" catchtap="stopMove">
+    <view class="cover-item topborder slected">淘宝</view>
+    <view class="cover-item">京东</view>
+    <view class="cover-item">拼多多</view>
+    <view class="cover-item">唯品会</view>
+    <view class="cover-item noborder">饿了么</view>
+	</view>
+</view>
+<!-- 标题栏弹窗end -->

@@ -1,7 +1,8 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/customTitle/customTitle"
+    "pages/customTitle/customTitle",
+    "pages/upToDown/upToDown"
   ],
   "window": {
     "backgroundTextStyle": "light",

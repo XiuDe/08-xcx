@@ -56,6 +56,12 @@
         {
           "name": "自定义标题栏",
           "pathName": "pages/customTitle/customTitle",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "标题向下弹窗",
+          "pathName": "pages/upToDown/upToDown",
           "scene": null
         }
       ]
