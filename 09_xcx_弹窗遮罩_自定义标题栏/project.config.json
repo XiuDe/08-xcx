@@ -62,6 +62,13 @@
         {
           "name": "标题向下弹窗",
           "pathName": "pages/upToDown/upToDown",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "自定义标题+页面划动",
+          "pathName": "pages/customTitleAndScroll/customTitleAndScroll",
+          "query": "",
           "scene": null
         }
       ]

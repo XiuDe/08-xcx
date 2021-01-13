@@ -1,0 +1,47 @@
+<!-- 自定义标题栏start background: linear-gradient(270deg, #EE0407, #FD1B49 100%); -->
+<view class="jn_same_height" style="position:relative;top:0;z-index:49;left:0;widht:750rpx;height:{{jnPosition.height+jnPosition.top+4}}px;text-align:center;">
+  <!-- <image catchtap="backpage" style="width: 22rpx;height: 38rpx;position: fixed;top: {{jnPosition.top+6}}px;left: 15px;z-index:500;" src="/images/other-profit-icon-back.png"></image>
+  <view style="padding-top:{{jnPosition.top+4}}px;">其他收益</view> -->
+  <image class="jm_zy_bg" src="/images/jm_zy_bg.png"></image>
+  <!-- 全部 已付款 已结算 已失效 tag切换 -->
+</view>
+<!-- 自定义标题栏end -->
+<!-- 胶囊区占位 -->
+<view class="title_bar" style="height:{{jnPosition.bottom+4}}px;line-height:{{jnPosition.bottom+4}}px;"></view>
+
+<!-- 精选 start -->
+<view class="nav-container">
+	<view class="nav-item {{s==''?'on':''}}" data-state="" bindtap="changeNav">
+		<text>精选</text>
+		<view class="nav-bottom" wx:if="{{s==''}}"></view>
+	</view>
+	<view class="nav-item {{s=='1'?'on':''}}" data-state="1" bindtap="changeNav">
+		<text>美妆护肤</text>
+		<view class="nav-bottom" wx:if="{{s=='1'}}"></view>
+	</view>
+	<view class="nav-item {{s=='2'?'on':''}}" data-state="2" bindtap="changeNav">
+		<text>个人护理</text>
+		<view class="nav-bottom" wx:if="{{s=='2'}}"></view>
+	</view>
+	<view class="nav-item {{s=='3'?'on':''}}" data-state="3" bindtap="changeNav">
+		<text>清洁</text>
+		<view class="nav-bottom" wx:if="{{s=='3'}}"></view>
+	</view>
+  <view class="nav-item {{s=='4'?'on':''}}" data-state="4" bindtap="changeNav">
+		<text>个护</text>
+		<view class="nav-bottom" wx:if="{{s=='4'}}"></view>
+	</view>
+</view>
+<!-- 精选 end -->
+<!-- banner -->
+<view class="jm_banner" >
+    <view class="swiper-container">
+      <swiper wx:key="items">
+			 <swiper-item class="swiper-item" wx:for="{{[1,2,3,4,5,6]}}" wx:key="index">
+       {{index}}
+					<image class="swiper-item-img" src=""></image>
+			 </swiper-item>
+		  </swiper>
+    </view>
+</view>
+<!-- banner end -->

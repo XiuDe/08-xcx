@@ -1,14 +1,11 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/customTitle/customTitle",
-    "pages/upToDown/upToDown",
-    "pages/customTitleAndScroll/customTitleAndScroll"
+    "index/index"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",

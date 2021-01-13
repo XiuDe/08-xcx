@@ -1,0 +1,129 @@
+page{
+  height: 9999rpx;
+  background-color: pink;
+}
+/* 自定义标题栏start */
+.jn_same_height {
+  position: fixed;
+  width: 750rpx;
+}
+
+.jm_zy_bg {
+  width: 750rpx;
+  height: 330rpx;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.jn_same_height view {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  /* left: 50%;
+  transform: translate(-50%, 0); */
+  width: 144rpx;
+  height: 50rpx;
+  font-size: 36rpx;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  /* line-height: 50rpx; */
+  /* background: linear-gradient(270deg, #EE0407, #FD1B49 100%); */
+}
+
+.title_bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 750rpx;
+  z-index: 996;
+  background: linear-gradient(270deg, #EE0407, #FD1B49 100%);
+}
+
+/* 自定义标题栏end */
+/* 切换 */
+/* 全部 已付款 */
+.nav-container {
+  position: relative;
+  z-index: 100;
+  width: 100vw;
+  height: 70rpx;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(270deg, #EE0407, #FD1B49 100%);
+}
+
+.nav-container .nav-item {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.nav-item text {
+  display: block;
+  color: #fff;
+  font-size: 26rpx;
+  font-weight: 400;
+  height: 86rpx;
+  line-height: 86rpx;
+  border-bottom: 6rpx solid transparent;
+}
+
+/* nav 选中状态 */
+
+.nav-item.on text {
+  height: 86rpx;
+  line-height: 86rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav-bottom {
+  width: 40rpx;
+  height: 6rpx;
+  background: #fff;
+  border-radius: 4rpx;
+  position: absolute;
+  bottom: 0;
+}
+
+.bbctouch-order-item-white {
+  width: 100%;
+  height: 19rpx;
+  background-color: #fff;
+}
+/* banner start */
+.jm_banner{
+  margin-top: 40rpx;
+  width: 750rpx;
+  position: relative;
+  z-index: 60;
+  display: flex;
+  justify-content: center;
+}
+.swiper-container{
+  width: 690rpx;
+  height: 250rpx;
+  background-color: orange;
+  border-radius: 8rpx;
+  overflow: hidden;
+}
+.swiper-item{
+  width: 690rpx !important;
+  height: 250rpx;
+  background-color: orange;
+  border-radius: 8rpx;
+}
+.swiper-item-img{
+  width: 690rpx;
+  height: 250rpx;
+  background-color: orange;
+  border-radius: 8rpx;
+}
+/* banner end */
