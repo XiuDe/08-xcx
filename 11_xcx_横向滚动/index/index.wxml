@@ -12,10 +12,12 @@
         </scroll-view>
       </view>
     </view>
+
     <view class="page-section">
       <view class="page-section-title">
         <text>Horizontal Scroll\n横向滚动</text>
       </view>
+      
       <view class="page-section-spacing">
         <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
           <view id="demo1" class="scroll-view-item_H demo-text-1"></view>
@@ -24,5 +26,6 @@
         </scroll-view>
       </view>
     </view>
+
   </view>
 </view>
